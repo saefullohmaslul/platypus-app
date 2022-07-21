@@ -1,0 +1,22 @@
+{
+  "name": "platypus",
+  "version": "1.0.0",
+  "description": "Perpustakaan Online",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "perpustakaan"
+  ],
+  "author": "Saefulloh Maslul",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
