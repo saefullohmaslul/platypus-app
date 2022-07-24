@@ -20,8 +20,12 @@
 
 3. Running Migration
 
-npx sequelize db:migrate
+    ```
+    npx sequelize db:migrate
+    ```
 
 4. Undo Migration
 
-npx sequelize db:migrate:undo
+    ```
+    npx sequelize db:migrate:undo
+    ```
