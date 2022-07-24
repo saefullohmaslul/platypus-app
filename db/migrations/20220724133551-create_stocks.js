@@ -21,27 +21,27 @@ module.exports = {
           key: "id",
         },
       },
-      availableStock: {
+      available_stock: {
         type: Sequelize.INTEGER,
       },
-      totalStock: {
+      total_stock: {
         type: Sequelize.INTEGER,
       },
-      rentStock: {
+      rent_stock: {
         type: Sequelize.INTEGER,
       },
-      brokenStock: {
+      broken_stock: {
         type: Sequelize.INTEGER,
       },
-      createdAt: {
+      created_at: {
         type: Sequelize.DATE,
         allowNull: false,
       },
-      updatedAt: {
+      updated_at: {
         type: Sequelize.DATE,
         allowNull: false,
       },
-      deletedAt: {
+      deleted_at: {
         type: Sequelize.DATE,
       },
     })

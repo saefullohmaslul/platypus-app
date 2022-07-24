@@ -24,7 +24,7 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      categoryId: {
+      category_id: {
         type: Sequelize.INTEGER,
         allowNull: false,
         references: {
@@ -32,7 +32,7 @@ module.exports = {
           key: "id",
         },
       },
-      publishDate: {
+      publish_date: {
         type: Sequelize.DATE,
         allowNull: false,
       },
@@ -40,26 +40,26 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      isbnNo: {
+      isbn_no: {
         type: sequelize.STRING,
         unique: true,
       },
-      totalPage: {
+      total_page: {
         type: Sequelize.INTEGER,
         allowNull: false,
       },
       weight: {
         type: Sequelize.INTEGER,
       },
-      createdAt: {
+      created_at: {
         type: Sequelize.DATE,
         allowNull: false,
       },
-      updatedAt: {
+      updated_at: {
         type: Sequelize.DATE,
         allowNull: false,
       },
-      deletedAt: {
+      deleted_at: {
         type: Sequelize.DATE,
       },
     })
