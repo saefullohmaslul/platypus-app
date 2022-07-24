@@ -3,7 +3,7 @@
 module.exports = {
   async up (queryInterface, Sequelize) {
     await queryInterface.createTable(
-      'tb_transaction_items',
+      'transaction_items',
       { 
         id: {
           type: Sequelize.INTEGER,
@@ -14,18 +14,13 @@ module.exports = {
         book_id: {
           type: Sequelize.INTEGER,
           allowNull: false
-          // references: {
-          //   model: 'book',
-          //   key: 'id'
-          // },
-          // onDelete: 'CASCADE',
-          // onUpdate: 'CASCADE'
+         
         },
         transaction_id: {
           type: Sequelize.INTEGER,
           allowNull: false,
           references: {
-            model: 'tb_transactions',
+            model: 'transactions',
             key: 'id'
           },
           onDelete: 'CASCADE',
@@ -33,12 +28,7 @@ module.exports = {
         },
         stock: {
           type: Sequelize.INTEGER,
-          // references: {
-          //   model: 'book',
-          //   key: 'id'
-          // },
-          // onDelete: 'CASCADE',
-          // onUpdate: 'CASCADE'
+         
         },
         created_at: {
           type: Sequelize.DATE,
