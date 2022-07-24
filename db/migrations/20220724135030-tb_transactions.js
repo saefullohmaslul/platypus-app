@@ -33,7 +33,7 @@ module.exports = {
           
         },
         status: {
-          type: Sequelize.BOOLEAN,
+          type: Sequelize.STRING,
          
         },
         created_at: {
