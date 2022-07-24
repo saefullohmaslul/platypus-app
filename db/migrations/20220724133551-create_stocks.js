@@ -20,6 +20,8 @@ module.exports = {
           model: "books",
           key: "id",
         },
+        onUpdate: "CASCADE",
+        onDelete: "CASCADE",
       },
       available_stock: {
         type: Sequelize.INTEGER,

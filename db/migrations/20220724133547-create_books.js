@@ -31,6 +31,8 @@ module.exports = {
           model: "categories",
           key: "id",
         },
+        onUpdate: "CASCADE",
+        onDelete: "CASCADE",
       },
       publish_date: {
         type: Sequelize.DATE,
