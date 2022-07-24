@@ -6,7 +6,10 @@
   "scripts": {
     "start:dev": "nodemon index.js",
     "start": "node index.js",
-    "db:migrate": "sequelize db:migrate"
+    "db:create": "sequelize-cli db:create",
+    "db:migrate": "sequelize-cli db:migrate",
+    "db:g:migration": "sequelize-cli migration:generate --name",
+    "db:reset": "sequelize-cli db:drop && sequelize-cli db:create && sequelize-cli db:migrate"
   },
   "keywords": [
     "perpustakaan"
