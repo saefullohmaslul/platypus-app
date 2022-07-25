@@ -28,6 +28,10 @@
 
     ```
     npx sequelize db:migrate:undo
+
+    #or
+
+    npx sequelize db:migrate:undo:all
     ```
 
 Tipe Tabel yang biasa dipake:

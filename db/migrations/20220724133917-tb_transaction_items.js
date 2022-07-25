@@ -13,8 +13,12 @@ module.exports = {
         },
         book_id: {
           type: Sequelize.INTEGER,
-          allowNull: false
-         
+          references: {
+            model: "books",
+            key: "id",
+          },
+          onUpdate: "CASCADE",
+          onDelete: "CASCADE",
         },
         transaction_id: {
           type: Sequelize.INTEGER,
@@ -28,7 +32,6 @@ module.exports = {
         },
         stock: {
           type: Sequelize.INTEGER,
-         
         },
         created_at: {
           type: Sequelize.DATE,

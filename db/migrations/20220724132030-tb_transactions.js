@@ -13,12 +13,16 @@ module.exports = {
         },
         user_id: {
           type: Sequelize.INTEGER,
-          allowNull: false
+          references: {
+            model: 'users',
+            key: 'id'
+          },
+          onDelete: 'CASCADE',
+          onUpdate: 'CASCADE'
         },
         transaction_date: {
           type: Sequelize.DATE,
           allowNull: false
-          
         },
         return_date: {
           type: Sequelize.DATE,
@@ -26,15 +30,14 @@ module.exports = {
         },
         pinalty_amount: {
           type: Sequelize.INTEGER,
-          
         },
         point_amount: {
           type: Sequelize.INTEGER,
           
         },
         status: {
-          type: Sequelize.STRING,
-         
+          type: Sequelize.ENUM,
+          values: ['PAID', 'CANCEL', 'PENDING'],
         },
         created_at: {
           type: Sequelize.DATE,

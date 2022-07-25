@@ -19,7 +19,7 @@ module.exports = {
         allowNull: false,
       },
       status: {
-        type: Sequelize.BOOLEAN,
+        type: Sequelize.BOOLEAN, // true/false
         allowNull: false,
       },
       descriptions: {

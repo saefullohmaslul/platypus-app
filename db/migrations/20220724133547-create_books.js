@@ -1,7 +1,5 @@
 "use strict"
 
-const sequelize = require("sequelize")
-
 module.exports = {
   async up(queryInterface, Sequelize) {
     /**
@@ -43,7 +41,7 @@ module.exports = {
         allowNull: false,
       },
       isbn_no: {
-        type: sequelize.STRING,
+        type: Sequelize.STRING,
         unique: true,
       },
       total_page: {
