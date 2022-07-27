@@ -1,7 +1,7 @@
 const Roles = require('./roles')
 const Users = require('./users')
 const Transactions = require('./transactions')
-const Transaction_items = require('./transaction_items')
+const TransactioniItems = require('./transaction_items')
 const sequelize = require('./sequelize')
 
 Roles.hasMany(Users, {
@@ -27,7 +27,7 @@ Transactions.hasMany(Users, {
 //     foreignKey: 'book_id',
 // })
 
-Transaction_items.hasMany(Transactions, {
+TransactionItems.hasMany(Transactions, {
     as: 'transactions',
     foreignKey: 'transaction_id',
 })
@@ -38,5 +38,5 @@ module.exports = {
     Users,
     Roles,
     Transactions,
-    Transaction_items
+    TransactioniItems
 }
