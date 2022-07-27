@@ -5,6 +5,7 @@ const register = async (req, res, next) => {
     try {
         const bodies = req.body
 
+        // cek apakah ada user yang memiliki email yang sudah di register
         const isUserExist = await Users.findOne({
             where: {
                 email: bodies.email
@@ -12,6 +13,7 @@ const register = async (req, res, next) => {
             attributes: ['id']
         })
 
+        // if user exist, send error message
         if (isUserExist) {
             throw {
                 code: 400,
@@ -19,8 +21,10 @@ const register = async (req, res, next) => {
             }
         }
 
+        // hash pw karna secret
         const hasedPassword = bcrypt.hashSync(bodies.password, 12)
 
+        // insert ke db
         const user = await Users.create({
             email: bodies.email,
             password: hasedPassword,

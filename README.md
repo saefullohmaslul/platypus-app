@@ -43,3 +43,40 @@ Tipe Tabel yang biasa dipake:
 - JSON, JSONB: kalo data kita json
 - UUID: id unique, biasa buat jadi tipe dari id, alt selain integer
 - BOOLEAN: true/false
+
+Query:
+
+Users.findAll({
+    where: {
+
+    }
+})
+
+Users.findOne({
+    where: {
+
+    }
+})
+
+Users.create()
+
+Users.update()
+
+Users.destroy()
+
+### Docs Sequelize yang perlu dibaca:
+
+- Migration
+- Seeder
+- Model
+- Operator: https://sequelize.org/docs/v6/core-concepts/model-querying-basics/
+- Include
+- Attributes
+
+### Destroy multi data
+
+await Promise.all(
+    users.map(async user => {
+        await user.destroy()
+    })
+)
