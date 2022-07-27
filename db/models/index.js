@@ -3,6 +3,9 @@ const Users = require('./users');
 const sequelize = require('./sequelize');
 const Cards = require('./cards');
 const Points = require('./points');
+const Category = require('./categories');
+const Books = require('./books');
+const Stocks = require('./stocks');
 
 Roles.hasMany(Users, {
   as: 'users',
@@ -34,10 +37,33 @@ Users.hasOne(Cards, {
   foreignKey: 'user_id'
 });
 
+Category.hasMany(Books, {
+  as: 'books',
+  foreignKey: 'category_id'
+});
+
+Books.belongsTo(Category, {
+  as: 'category',
+  foreignKey: 'category_id'
+});
+
+Books.hasOne(Stocks, {
+  as: 'stock',
+  foreignKey: 'book_id'
+});
+
+Stocks.belongsTo(Books, {
+  as: 'book',
+  foreignKey: 'book_id'
+});
+
 module.exports = {
   sequelize,
   Users,
   Roles,
   Cards,
-  Points
+  Points,
+  Books,
+  Category,
+  Stocks
 };
