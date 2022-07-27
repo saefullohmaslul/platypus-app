@@ -37,5 +37,7 @@ Users.hasOne(Cards, {
 module.exports = {
   sequelize,
   Users,
-  Roles
+  Roles,
+  Cards,
+  Points
 };
