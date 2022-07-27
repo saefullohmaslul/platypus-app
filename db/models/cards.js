@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 const sequelize = require('./sequelize');
 
-class Cards extends Sequelize.model {}
+class Cards extends Sequelize.Model {}
 
 Cards.init(
   {

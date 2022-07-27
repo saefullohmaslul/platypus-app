@@ -3,7 +3,7 @@ const Users = require('./users');
 const sequelize = require('./sequelize');
 const Cards = require('./cards');
 const Points = require('./points');
-const Category = require('./categories');
+const Categories = require('./categories');
 const Books = require('./books');
 const Stocks = require('./stocks');
 const Transactions = require('./transactions')
@@ -14,39 +14,37 @@ Roles.hasMany(Users, {
     foreignKey: 'role_id'
 });
 
-
-
 Users.belongsTo(Roles, {
     as: 'role',
     foreignKey: 'role_id'
 });
 
 Cards.belongsTo(Users, {
-    as: 'users',
+    as: 'user',
     foreignKey: 'user_id'
 });
 
 Points.belongsTo(Cards, {
-    as: 'cards',
+    as: 'card',
     foreignKey: 'card_id'
 });
 
 Cards.hasOne(Points, {
-    as: 'points',
+    as: 'point',
     foreignKey: 'card_id'
 });
 
 Users.hasOne(Cards, {
-    as: 'card_user',
+    as: 'card',
     foreignKey: 'user_id'
 });
 
-Category.hasMany(Books, {
+Categories.hasMany(Books, {
     as: 'books',
     foreignKey: 'category_id'
 });
 
-Books.belongsTo(Category, {
+Books.belongsTo(Categories, {
     as: 'category',
     foreignKey: 'category_id'
 });
@@ -86,6 +84,6 @@ module.exports = {
     Cards,
     Points,
     Books,
-    Category,
+    Categories,
     Stocks
 };
