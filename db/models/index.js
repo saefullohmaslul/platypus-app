@@ -6,64 +6,86 @@ const Points = require('./points');
 const Category = require('./categories');
 const Books = require('./books');
 const Stocks = require('./stocks');
+const Transactions = require('./transactions')
+const TransactionItems = require('./transaction_items')
 
 Roles.hasMany(Users, {
-  as: 'users',
-  foreignKey: 'role_id'
+    as: 'users',
+    foreignKey: 'role_id'
 });
 
+
+
 Users.belongsTo(Roles, {
-  as: 'role',
-  foreignKey: 'role_id'
+    as: 'role',
+    foreignKey: 'role_id'
 });
 
 Cards.belongsTo(Users, {
-  as: 'users',
-  foreignKey: 'user_id'
+    as: 'users',
+    foreignKey: 'user_id'
 });
 
 Points.belongsTo(Cards, {
-  as: 'cards',
-  foreignKey: 'card_id'
+    as: 'cards',
+    foreignKey: 'card_id'
 });
 
 Cards.hasOne(Points, {
-  as: 'points',
-  foreignKey: 'card_id'
+    as: 'points',
+    foreignKey: 'card_id'
 });
 
 Users.hasOne(Cards, {
-  as: 'card_user',
-  foreignKey: 'user_id'
+    as: 'card_user',
+    foreignKey: 'user_id'
 });
 
 Category.hasMany(Books, {
-  as: 'books',
-  foreignKey: 'category_id'
+    as: 'books',
+    foreignKey: 'category_id'
 });
 
 Books.belongsTo(Category, {
-  as: 'category',
-  foreignKey: 'category_id'
+    as: 'category',
+    foreignKey: 'category_id'
 });
 
 Books.hasOne(Stocks, {
-  as: 'stock',
-  foreignKey: 'book_id'
+    as: 'stock',
+    foreignKey: 'book_id'
 });
 
 Stocks.belongsTo(Books, {
-  as: 'book',
-  foreignKey: 'book_id'
+    as: 'book',
+    foreignKey: 'book_id'
 });
 
+Transactions.hasMany(Users, {
+    as: 'users',
+    foreignKey: 'user_id',
+})
+
+TransactionItems.hasMany(Books, {
+    as: 'books',
+    foreignKey: 'book_id',
+})
+
+TransactionItems.hasMany(Transactions, {
+    as: 'transactions',
+    foreignKey: 'transaction_id',
+})
+
+
 module.exports = {
-  sequelize,
-  Users,
-  Roles,
-  Cards,
-  Points,
-  Books,
-  Category,
-  Stocks
+    sequelize,
+    Users,
+    Roles,
+    Transactions,
+    TransactionItems,
+    Cards,
+    Points,
+    Books,
+    Category,
+    Stocks
 };
