@@ -1,9 +1,9 @@
 const Sequelize = require('sequelize')
 const sequelize = require('./sequelize')
 
-class transactions extends Sequelize.Model {}
+class Transactions extends Sequelize.Model {}
 
-transactions.init({
+Transactions.init({
     id: {
         type: Sequelize.DataTypes.INTEGER,
         autoIncrement: true,
@@ -60,7 +60,7 @@ transactions.init({
     underscored: true,
     paranoid: true,
     freezeTableName: true,
-    tableName: 'transactions'
+    tableName: 'Transactions'
 })
 
-module.exports = transactions
+module.exports = Transactions
