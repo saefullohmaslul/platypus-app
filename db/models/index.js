@@ -59,7 +59,7 @@ Stocks.belongsTo(Books, {
     foreignKey: 'book_id'
 });
 
-Transactions.hasMany(Users, {
+Transactions.belongsTo(Users, {
     as: 'users',
     foreignKey: 'user_id',
 })
