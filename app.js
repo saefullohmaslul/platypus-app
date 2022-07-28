@@ -1,10 +1,7 @@
 const express = require('express');
 const userRouter = require('./routes/users')
-const {sequelize} = require('./db/models')
 
 const app = express()
-
-sequelize.sync({force: true}).catch(err => console.log(err))
 
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
