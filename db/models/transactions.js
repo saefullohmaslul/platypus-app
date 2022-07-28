@@ -51,8 +51,7 @@ Transactions.init({
 
     },
     status: {
-        type: Sequelize.DataTypes.ENUM,
-        values: ['PAID', 'CANCEL', 'PENDING'],
+        type: Sequelize.DataTypes.STRING,
     }
 }, {
     sequelize: sequelize,
@@ -60,7 +59,7 @@ Transactions.init({
     underscored: true,
     paranoid: true,
     freezeTableName: true,
-    tableName: 'Transactions'
+    tableName: 'transactions'
 })
 
 module.exports = Transactions

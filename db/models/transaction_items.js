@@ -28,7 +28,6 @@ TransactionItems.init({
             notEmpty: true
         }
     },
-
     transaction_id: {
         type: Sequelize.DataTypes.INTEGER,
         allowNull: false,
@@ -49,7 +48,7 @@ TransactionItems.init({
     underscored: true,
     paranoid: true,
     freezeTableName: true,
-    tableName: 'TransactionItems'
+    tableName: 'transaction_items'
 })
 
 module.exports = TransactionItems

@@ -35,8 +35,7 @@ module.exports = {
 
                 },
                 status: {
-                    type: Sequelize.ENUM,
-                    values: ['PAID', 'CANCEL', 'PENDING'],
+                    type: Sequelize.STRING,
                 },
                 created_at: {
                     type: Sequelize.DATE,

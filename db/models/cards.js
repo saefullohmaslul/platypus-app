@@ -24,8 +24,7 @@ Cards.init(
       type: Sequelize.DataTypes.STRING
     },
     status: {
-      type: Sequelize.DataTypes.ENUM,
-      values: ['ACTIVE', 'NON_ACTIVE']
+      type: Sequelize.DataTypes.STRING,
     }
   },
   {
