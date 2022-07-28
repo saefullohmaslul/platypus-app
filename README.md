@@ -34,6 +34,24 @@
     npx sequelize db:migrate:undo:all
     ```
 
+5. Create seeder
+
+    ```
+    npx sequelize seed:generate --name <name>
+    ```
+
+6. Running seeder
+
+    ```
+    npx sequelize db:seed:all 
+    ```
+
+7. Undo seeder
+
+    ```
+    npx sequelize db:seed:undo:all
+    ```
+
 Tipe Tabel yang biasa dipake:
 
 - STRING(255): akan mengalokasikan langsung 255 space (255kb)
