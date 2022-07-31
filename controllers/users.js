@@ -1,5 +1,8 @@
+require('dotenv').config()
+
 const { Users, Roles, Cards, Points, sequelize } = require('../db/models')
 const bcrypt = require('bcrypt')
+const jwt = require('jsonwebtoken')
 const { add } = require('date-fns')
 
 const register = async (req, res, next) => {
@@ -88,6 +91,57 @@ const register = async (req, res, next) => {
     }    
 }
 
+const login = async (req, res, next) => {
+    try {
+        const {email, password} = req.body
+
+        // cek email tersebut ada ngga di db
+        const user = await Users.findOne({
+            where: {
+                email
+            },
+            attributes: ['id', 'role_id', 'password'],
+            include: [
+                {
+                    model: Roles,
+                    as: 'role',
+                    attributes: ['id', 'name']
+                }
+            ]
+        })
+
+        // kalo gaada email, throw error user not found
+        if (!user) {
+            throw {
+                code: 404,
+                message: 'user not found'
+            }
+        }
+
+        // kalo ada kita compare pw
+        const isValidPassword = await bcrypt.compare(password, user.password)
+
+        // kalo pwnya beda, throw invalid pw
+        if (!isValidPassword) {
+            throw {
+                code: 403,
+                message: 'invalid password'
+            }
+        }
+
+        // kalo pwnya sama, generate token
+        const token = jwt.sign({ user_id: user.id, role: user.role.name}, process.env.JWT_SECRET, {expiresIn: process.env.JWT_EXPIRES_IN})
+
+        // kirim token di respon
+        return res.status(200).json({
+            token
+        })
+    } catch (error) {
+        next(error)
+    }
+}
+
 module.exports = {
-    register
+    register,
+    login
 }
