@@ -28,7 +28,7 @@ Transactions.init({
             notEmpty: true
         }
     },
-    transcation_date: {
+    transaction_date: {
         type: Sequelize.DataTypes.DATE,
         allowNull: false,
         validate: {
@@ -37,11 +37,6 @@ Transactions.init({
     },
     return_date: {
         type: Sequelize.DataTypes.DATE,
-        allowNull: false,
-        validate: {
-            notEmpty: true
-        }
-
     },
     pinalty_amount: {
         type: Sequelize.DataTypes.INTEGER,
