@@ -1,25 +1,25 @@
-const { Sequelize, DataTypes } = require("sequelize")
+const { Model, DataTypes } = require("sequelize")
 const connection = require("./sequelize")
 
-class Books extends Sequelize.Model {}
+class Books extends Model {}
 
 Books.init(
   {
     id: {
-      type: Sequelize.INTEGER,
+      type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true,
     },
     title: {
-      type: Sequelize.STRING,
+      type: DataTypes.STRING,
       allowNull: false,
     },
     author: {
-      type: Sequelize.STRING,
+      type: DataTypes.STRING,
       allowNull: false,
     },
     category_id: {
-      type: Sequelize.INTEGER,
+      type: DataTypes.INTEGER,
       allowNull: false,
       references: {
         model: "categories",
@@ -29,23 +29,23 @@ Books.init(
       onDelete: "CASCADE",
     },
     publish_date: {
-      type: Sequelize.DATE,
+      type: DataTypes.DATE,
       allowNull: false,
     },
     publisher: {
-      type: Sequelize.STRING,
+      type: DataTypes.STRING,
       allowNull: false,
     },
     isbn_no: {
-      type: Sequelize.STRING,
+      type: DataTypes.STRING,
       unique: true,
     },
     total_page: {
-      type: Sequelize.INTEGER,
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
     weight: {
-      type: Sequelize.INTEGER,
+      type: DataTypes.INTEGER,
     },
   },
   {

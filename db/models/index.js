@@ -64,7 +64,7 @@ Transactions.belongsTo(Users, {
     foreignKey: 'user_id',
 })
 
-TransactionItems.hasMany(Books, {
+TransactionItems.belongsTo(Books, {
     as: 'books',
     foreignKey: 'book_id',
 })

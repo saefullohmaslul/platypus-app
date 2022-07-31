@@ -1,25 +1,25 @@
-const { Sequelize, DataTypes } = require("sequelize")
+const { Model, DataTypes } = require("sequelize")
 const connection = require("./sequelize")
 
-class Categories extends Sequelize.Model {}
+class Categories extends Model {}
 
 Categories.init(
   {
     id: {
-      type: Sequelize.INTEGER,
+      type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true,
     },
     name: {
-      type: Sequelize.STRING,
+      type: DataTypes.STRING,
       allowNull: false,
     },
     status: {
-      type: Sequelize.BOOLEAN, // true/false
+      type: DataTypes.BOOLEAN, // true/false
       allowNull: false,
     },
     descriptions: {
-      type: Sequelize.STRING,
+      type: DataTypes.STRING,
     },
   },
   {

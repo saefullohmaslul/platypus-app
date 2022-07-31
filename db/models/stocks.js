@@ -1,17 +1,17 @@
-const { Sequelize, DataTypes } = require("sequelize")
+const { DataTypes, Model } = require("sequelize")
 const connection = require("./sequelize")
 
-class Stocks extends Sequelize.Model {}
+class Stocks extends Model {}
 
 Stocks.init(
   {
     id: {
-      type: Sequelize.INTEGER,
+      type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true,
     },
     book_id: {
-      type: Sequelize.INTEGER,
+      type: DataTypes.INTEGER,
       references: {
         model: "books",
         key: "id",
@@ -20,16 +20,16 @@ Stocks.init(
       onDelete: "CASCADE",
     },
     available_stock: {
-      type: Sequelize.INTEGER,
+      type: DataTypes.INTEGER,
     },
     total_stock: {
-      type: Sequelize.INTEGER,
+      type: DataTypes.INTEGER,
     },
     rent_stock: {
-      type: Sequelize.INTEGER,
+      type: DataTypes.INTEGER,
     },
     broken_stock: {
-      type: Sequelize.INTEGER,
+      type: DataTypes.INTEGER,
     },
   },
   {
