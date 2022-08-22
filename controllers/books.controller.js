@@ -1,8 +1,7 @@
 const {sequelize, Books, Categories, Stocks} = require('../db/models')
 
 const createBook = async (req, res, next) => {
-    console.log(req.user_id)
-    console.log(req.role)
+    console.log(req.user)
     
     try {
         const {category_id, stock, ...createBook} = req.body

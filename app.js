@@ -2,9 +2,11 @@ const express = require('express');
 const userRouter = require('./routes/users')
 const bookRouter = require('./routes/books.router')
 const trxRouter = require('./routes/transactions.router')
+const passport = require('./middlewares/passport-middleware')
 
 const app = express()
 
+app.use(passport.initialize())
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 

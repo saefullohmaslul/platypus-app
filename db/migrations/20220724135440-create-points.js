@@ -5,13 +5,9 @@ module.exports = {
     await queryInterface.createTable('points', {
       id: {
         type: Sequelize.INTEGER,
-        autoIncrement: true,
         primaryKey: true,
         unique: true,
-        allowNull: false
-      },
-      card_id: {
-        type: Sequelize.INTEGER,
+        allowNull: false,
         references: {
           model: 'cards',
           key: 'id'
