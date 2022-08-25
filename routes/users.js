@@ -1,4 +1,4 @@
-const { register, login } = require('../controllers/users')
+const { register, login, registerUsingOauth } = require('../controllers/users')
 
 const validation = require('../middlewares/validation.middleware')
 
@@ -9,5 +9,6 @@ const router = require('express').Router()
 
 router.post('/register', validation(registerSchema), register)
 router.post('/login', validation(loginSchema), login)
+router.get('/register/oauth', registerUsingOauth)
 
 module.exports = router

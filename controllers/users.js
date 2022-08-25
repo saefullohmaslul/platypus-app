@@ -141,7 +141,68 @@ const login = async (req, res, next) => {
     }
 }
 
+const registerUsingOauth = async (req, res, next) => {
+    try {        
+        const {displayName, emails} = req.user
+        const email = emails[0].value
+        const roleId = 2
+
+        let [user, role] = await Promise.all([
+            Users.findOne({
+                where: {
+                    email
+                }
+            }),
+            Roles.findOne({
+                where: {
+                    id: roleId
+                }
+            })
+        ])
+
+
+        if (!user) {
+            await sequelize.transaction(async transaction => {
+                user =  await Users.create({
+                    email,
+                    name: displayName,
+                    role_id: roleId
+                }, {transaction})
+
+                const card = await Cards.create({
+                    user_id: user.id,
+                    type: 'PEMBACA',
+                    status: 'ACTIVE'
+                }, {
+                    transaction
+                })
+    
+                // create point
+                const now = new Date()
+                await Points.create({
+                    card_id: card.id,
+                    point: 1000000,
+                    expired_at: add(now, { // jangan lupa insall date-fns (npm install date-fns)
+                        years: 1,
+                    })
+                }, {
+                    transaction
+                })
+            })
+        }
+
+        const token = jwt.sign({ user_id: user.id, role: role.name}, process.env.JWT_SECRET, {expiresIn: process.env.JWT_EXPIRES_IN})
+
+        return res.status(200).json({
+            token
+        })
+    } catch (error) {
+        next(error)
+    }
+}
+
 module.exports = {
     register,
-    login
+    login,
+    registerUsingOauth
 }
