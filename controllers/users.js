@@ -4,6 +4,7 @@ const { Users, Roles, Cards, Points, sequelize } = require('../db/models')
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 const { add } = require('date-fns')
+const NewError = require('../helpers/error-stack.helper')
 
 const register = async (req, res, next) => {
     try {
@@ -26,19 +27,13 @@ const register = async (req, res, next) => {
 
         // cek apakah role_id nya ada atau tidak
         if (!isRoleExist) {
-            throw {
-                code: 404,
-                message: 'Role not found'
-            }
+            throw new NewError(404, 'Role not found')
         }
 
         // cek apakah ada user yang memiliki email yang sudah di register
         // if user exist, send error message
         if (isUserExist) {
-            throw {
-                code: 400,
-                message: 'Email already exist'
-            }
+            throw new NewError(400, 'Email already exist')
         }
 
         // hash pw karna secret
@@ -114,7 +109,7 @@ const login = async (req, res, next) => {
         if (!user) {
             throw {
                 code: 404,
-                message: 'user not found'
+                message: 'user not found',
             }
         }
 

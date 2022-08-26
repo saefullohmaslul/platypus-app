@@ -1,0 +1,277 @@
+2022-08-26T15:14:19.659Z [undefined] info: server running on port: 8000
+2022-08-26T15:14:31.259Z info: server running on port: 8000
+{
+  message: 'server running on port: 8000',
+  level: 'info',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:15:05.451Z'
+}
+{
+  message: 'server running on port: 8000',
+  level: 'info',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:16:45.908Z'
+}
+{
+  code: 404,
+  message: 'Role not found',
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:16:54.563Z'
+}
+{
+  message: 'server running on port: 8000',
+  level: 'info',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:18:51.473Z'
+}
+{
+  code: 404,
+  message: 'Role not found',
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:18:55.334Z'
+}
+{
+  message: 'server running on port: 8000',
+  level: 'info',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:19:13.652Z'
+}
+{
+  message: 'server running on port: 8000',
+  level: 'info',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:20:34.065Z'
+}
+{
+  message: 'server running on port: 8000',
+  level: 'info',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:21:28.668Z'
+}
+{
+  message: 'server running on port: 8000',
+  level: 'info',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:21:59.794Z'
+}
+{
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:22:05.183Z'
+}
+{
+  message: 'server running on port: 8000',
+  level: 'info',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:22:28.830Z'
+}
+{
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:22:30.857Z'
+}
+{
+  message: 'server running on port: 8000',
+  level: 'info',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:22:53.412Z'
+}
+{
+  message: 'server running on port: 8000',
+  level: 'info',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:23:00.191Z'
+}
+{
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:23:02.950Z'
+}
+{
+  message: 'server running on port: 8000',
+  level: 'info',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:23:20.390Z'
+}
+{
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:23:22.717Z'
+}
+{
+  message: 'server running on port: 8000',
+  level: 'info',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:23:33.757Z'
+}
+{
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:23:35.583Z'
+}
+{
+  message: 'server running on port: 8000',
+  level: 'info',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:23:52.440Z'
+}
+{
+  code: 404,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:23:54.421Z'
+}
+{
+  message: 'server running on port: 8000',
+  level: 'info',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:25:04.038Z'
+}
+{
+  code: 404,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:25:07.260Z',
+  message: 'Role not found',
+  stack: 'Error: Role not found\n' +
+    '    at register (/Users/saefullohmaslul/Works/Binar/bej-2/platypus/controllers/users.js:31:19)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
+}
+{
+  message: 'server running on port: 8000',
+  level: 'info',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:25:17.687Z'
+}
+{
+  code: 404,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:25:24.839Z',
+  message: 'Role not found',
+  stack: 'Error: Role not found\n' +
+    '    at register (/Users/saefullohmaslul/Works/Binar/bej-2/platypus/controllers/users.js:31:19)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
+}
+{
+  code: 404,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:25:28.728Z',
+  message: 'Role not found',
+  stack: 'Error: Role not found\n' +
+    '    at register (/Users/saefullohmaslul/Works/Binar/bej-2/platypus/controllers/users.js:31:19)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
+}
+{
+  code: 404,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:25:30.244Z',
+  message: 'Role not found',
+  stack: 'Error: Role not found\n' +
+    '    at register (/Users/saefullohmaslul/Works/Binar/bej-2/platypus/controllers/users.js:31:19)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
+}
+{
+  message: 'server running on port: 8000',
+  level: 'info',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:27:38.557Z'
+}
+{
+  message: 'server running on port: 8000',
+  level: 'info',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:28:02.995Z'
+}
+{
+  code: 404,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:28:05.015Z',
+  message: 'Role not found',
+  stack: 'Error: Role not found\n' +
+    '    at register (/Users/saefullohmaslul/Works/Binar/bej-2/platypus/controllers/users.js:31:19)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
+}
+{
+  code: 404,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:28:05.015Z',
+  message: 'Role not found',
+  stack: 'Error: Role not found\n' +
+    '    at register (/Users/saefullohmaslul/Works/Binar/bej-2/platypus/controllers/users.js:31:19)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
+}
+{
+  message: 'server running on port: 8000',
+  level: 'info',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:28:13.895Z'
+}
+{
+  code: 404,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:28:19.162Z',
+  message: 'Role not found',
+  stack: 'Error: Role not found\n' +
+    '    at register (/Users/saefullohmaslul/Works/Binar/bej-2/platypus/controllers/users.js:31:19)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
+}
+{
+  code: 400,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:28:31.825Z',
+  message: 'Email already exist',
+  stack: 'Error: Email already exist\n' +
+    '    at register (/Users/saefullohmaslul/Works/Binar/bej-2/platypus/controllers/users.js:37:19)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
+}
+{
+  message: 'server running on port: 8000',
+  level: 'info',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:33:07.016Z'
+}
+{
+  message: 'server running on port: 8000',
+  level: 'info',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:33:36.927Z'
+}
+{
+  message: 'server running on port: 8000',
+  level: 'info',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:34:04.025Z'
+}
+{
+  message: 'server running on port: 8000',
+  level: 'info',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:34:15.596Z'
+}
+{
+  message: 'server running on port: 8000',
+  level: 'info',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:34:19.173Z'
+}
+{
+  message: 'server running on port: 8000',
+  level: 'info',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:35:01.266Z'
+}
+{
+  message: 'server running on port: 8000',
+  level: 'info',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:37:39.389Z'
+}

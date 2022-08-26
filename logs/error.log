@@ -1,0 +1,125 @@
+{
+  code: 404,
+  message: 'Role not found',
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:16:54.563Z'
+}
+{
+  code: 404,
+  message: 'Role not found',
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:18:55.334Z'
+}
+{
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:22:05.183Z'
+}
+{
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:22:30.857Z'
+}
+{
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:23:02.950Z'
+}
+{
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:23:22.717Z'
+}
+{
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:23:35.583Z'
+}
+{
+  code: 404,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:23:54.421Z'
+}
+{
+  code: 404,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:25:07.260Z',
+  message: 'Role not found',
+  stack: 'Error: Role not found\n' +
+    '    at register (/Users/saefullohmaslul/Works/Binar/bej-2/platypus/controllers/users.js:31:19)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
+}
+{
+  code: 404,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:25:24.839Z',
+  message: 'Role not found',
+  stack: 'Error: Role not found\n' +
+    '    at register (/Users/saefullohmaslul/Works/Binar/bej-2/platypus/controllers/users.js:31:19)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
+}
+{
+  code: 404,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:25:28.728Z',
+  message: 'Role not found',
+  stack: 'Error: Role not found\n' +
+    '    at register (/Users/saefullohmaslul/Works/Binar/bej-2/platypus/controllers/users.js:31:19)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
+}
+{
+  code: 404,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:25:30.244Z',
+  message: 'Role not found',
+  stack: 'Error: Role not found\n' +
+    '    at register (/Users/saefullohmaslul/Works/Binar/bej-2/platypus/controllers/users.js:31:19)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
+}
+{
+  code: 404,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:28:05.015Z',
+  message: 'Role not found',
+  stack: 'Error: Role not found\n' +
+    '    at register (/Users/saefullohmaslul/Works/Binar/bej-2/platypus/controllers/users.js:31:19)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
+}
+{
+  code: 404,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:28:05.015Z',
+  message: 'Role not found',
+  stack: 'Error: Role not found\n' +
+    '    at register (/Users/saefullohmaslul/Works/Binar/bej-2/platypus/controllers/users.js:31:19)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
+}
+{
+  code: 404,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:28:19.162Z',
+  message: 'Role not found',
+  stack: 'Error: Role not found\n' +
+    '    at register (/Users/saefullohmaslul/Works/Binar/bej-2/platypus/controllers/users.js:31:19)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
+}
+{
+  code: 400,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-08-26T15:28:31.825Z',
+  message: 'Email already exist',
+  stack: 'Error: Email already exist\n' +
+    '    at register (/Users/saefullohmaslul/Works/Binar/bej-2/platypus/controllers/users.js:37:19)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
+}

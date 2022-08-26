@@ -7,7 +7,8 @@ const trxRouter = require('./routes/transactions.router')
 const oauthRouter = require('./routes/auth.router')
 
 const passport = require('./middlewares/passport-middleware')
-const passportOauth = require('./middlewares/passport-oauth.middleware')
+const passportOauth = require('./middlewares/passport-oauth.middleware');
+const logger = require('./helpers/winston.helper');
 
 
 const app = express()
@@ -31,6 +32,7 @@ app.use('/transactions', trxRouter)
 app.use(oauthRouter)
 
 app.use((err, req, res, next) => {
+    logger.error(err)
     return res.status(err.code || 500).json({
         message: err.message || 'Internal server error'
     })

@@ -28,7 +28,9 @@
     "passport-google-oauth20": "^2.0.0",
     "passport-jwt": "^4.0.0",
     "pg": "^8.7.3",
-    "sequelize": "^6.21.3"
+    "sequelize": "^6.21.3",
+    "winston": "^3.8.1",
+    "winston-logs-display": "^1.0.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.19",
