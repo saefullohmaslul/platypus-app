@@ -5,6 +5,7 @@ const userRouter = require('./routes/users')
 const bookRouter = require('./routes/books.router')
 const trxRouter = require('./routes/transactions.router')
 const oauthRouter = require('./routes/auth.router')
+const filesRouter = require('./routes/files.router')
 
 const passport = require('./middlewares/passport-middleware')
 const passportOauth = require('./middlewares/passport-oauth.middleware');
@@ -29,6 +30,7 @@ app.use(passport.session())
 app.use('/auth', userRouter)
 app.use('/books', bookRouter)
 app.use('/transactions', trxRouter)
+app.use('/files', filesRouter)
 app.use(oauthRouter)
 
 app.use((err, req, res, next) => {

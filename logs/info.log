@@ -275,3 +275,57 @@
   service: 'platypus',
   timestamp: '2022-08-26T15:37:39.389Z'
 }
+{
+  message: 'server running on port: 8080',
+  level: 'info',
+  service: 'platypus',
+  timestamp: '2022-08-29T13:21:37.665Z'
+}
+{
+  message: 'server running on port: 8080',
+  level: 'info',
+  service: 'platypus',
+  timestamp: '2022-08-29T13:31:25.278Z'
+}
+{
+  message: 'server running on port: 8080',
+  level: 'info',
+  service: 'platypus',
+  timestamp: '2022-08-29T13:32:00.282Z'
+}
+{
+  message: 'server running on port: 8080',
+  level: 'info',
+  service: 'platypus',
+  timestamp: '2022-08-29T13:33:01.433Z'
+}
+{
+  message: 'server running on port: 8080',
+  level: 'info',
+  service: 'platypus',
+  timestamp: '2022-08-29T13:34:29.530Z'
+}
+{
+  message: 'server running on port: 8080',
+  level: 'info',
+  service: 'platypus',
+  timestamp: '2022-08-29T13:37:48.930Z'
+}
+{
+  message: 'server running on port: 8080',
+  level: 'info',
+  service: 'platypus',
+  timestamp: '2022-08-29T13:39:18.007Z'
+}
+{
+  message: 'server running on port: 8080',
+  level: 'info',
+  service: 'platypus',
+  timestamp: '2022-08-29T13:44:24.846Z'
+}
+{
+  message: 'server running on port: 8080',
+  level: 'info',
+  service: 'platypus',
+  timestamp: '2022-08-29T13:45:35.891Z'
+}

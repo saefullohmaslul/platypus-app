@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  postgres:
+    container_name: postgres_binar
+    image: postgres
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASS}
+      PGDATA: /data/postgres
+    volumes:
+       - postgres:/data/postgres
+    ports:
+      - "5433:5432"
+    restart: unless-stopped
+
+volumes:
+  postgres:
