@@ -1,9 +1,30 @@
 const multer = require('multer')
+const path = require('path')
+const NewError = require('./error-stack.helper')
 
 const storage = multer.memoryStorage()
 
 const upload = multer({
-    storage
+    storage,
+    fileFilter: function (req, file, callback) {
+        const ext = path.extname(file.originalname)
+
+        const allowExtensions = [
+            '.jpg',
+            '.png',
+            '.jpeg',
+            '.gif',
+        ]
+
+        if (!allowExtensions.includes(ext)) {
+            return callback(new NewError(400, 'file not allowed'), null)
+        }
+
+        callback(null, true)
+    },
+    limits:{
+        // fileSize: 1024 * 1024
+    }
 })
 
 module.exports = upload
