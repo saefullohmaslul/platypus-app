@@ -35,6 +35,11 @@ app.use(oauthRouter)
 
 app.use((err, req, res, next) => {
     logger.error(err)
+    
+    if (typeof err.code !== 'number') {
+        err.code = undefined
+    }
+
     return res.status(err.code || 500).json({
         message: err.message || 'Internal server error'
     })
