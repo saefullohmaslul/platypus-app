@@ -46,7 +46,8 @@ const register = async (req, res, next) => {
                 email: bodies.email,
                 password: hasedPassword,
                 name: bodies.name,
-                role_id: isRoleExist.id
+                role_id: isRoleExist.id,
+                avatar: bodies.avatar
             }, {
                 transaction: trx
             })
@@ -59,6 +60,7 @@ const register = async (req, res, next) => {
             }, {
                 transaction: trx
             })
+            console.log(card)
 
             // create point
             const now = new Date()

@@ -8,12 +8,7 @@ module.exports = {
         primaryKey: true,
         unique: true,
         allowNull: false,
-        references: {
-          model: 'cards',
-          key: 'id'
-        },
-        onDelete: 'CASCADE',
-        onUpdate: 'CASCADE'
+        autoIncrement: true,
       },
       point: {
         type: Sequelize.INTEGER,

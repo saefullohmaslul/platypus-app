@@ -36,7 +36,10 @@ Users.init({
         },
         onUpdate: 'CASCADE',
         onDelete: 'CASCADE'
-    }
+    },
+    avatar: {
+        type: Sequelize.DataTypes.STRING
+    },
 }, {
     sequelize: sequelize,
     timestamps: true,
