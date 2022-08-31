@@ -123,3 +123,493 @@
     '    at register (/Users/saefullohmaslul/Works/Binar/bej-2/platypus/controllers/users.js:37:19)\n' +
     '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
 }
+{
+  code: 400,
+  storageErrors: [],
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-08-29T13:54:53.974Z',
+  message: 'file not allowed',
+  stack: 'Error: file not allowed\n' +
+    '    at fileFilter (D:\\Binar\\platypus-app\\helpers\\upload-file.helper.js:20:29)\n' +
+    '    at wrappedFileFilter (D:\\Binar\\platypus-app\\node_modules\\multer\\index.js:44:7)\n' +
+    '    at Multipart.<anonymous> (D:\\Binar\\platypus-app\\node_modules\\multer\\lib\\make-middleware.js:107:7)\n' +
+    '    at Multipart.emit (node:events:527:28)\n' +
+    '    at HeaderParser.cb (D:\\Binar\\platypus-app\\node_modules\\busboy\\lib\\types\\multipart.js:358:14)\n' +
+    '    at HeaderParser.push (D:\\Binar\\platypus-app\\node_modules\\busboy\\lib\\types\\multipart.js:162:20)\n' +
+    '    at SBMH.ssCb [as _cb] (D:\\Binar\\platypus-app\\node_modules\\busboy\\lib\\types\\multipart.js:394:37)\n' +
+    '    at feed (D:\\Binar\\platypus-app\\node_modules\\streamsearch\\lib\\sbmh.js:248:10)\n' +
+    '    at SBMH.push (D:\\Binar\\platypus-app\\node_modules\\streamsearch\\lib\\sbmh.js:104:16)\n' +
+    '    at Multipart._write (D:\\Binar\\platypus-app\\node_modules\\busboy\\lib\\types\\multipart.js:567:19)'
+}
+{
+  name: 'MulterError',
+  message: 'File too large',
+  code: 'LIMIT_FILE_SIZE',
+  field: 'avatar',
+  storageErrors: [],
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-08-29T13:57:52.134Z',
+  stack: 'MulterError: File too large\n' +
+    '    at abortWithCode (D:\\Binar\\platypus-app\\node_modules\\multer\\lib\\make-middleware.js:71:22)\n' +
+    '    at FileStream.<anonymous> (D:\\Binar\\platypus-app\\node_modules\\multer\\lib\\make-middleware.js:134:11)\n' +
+    '    at FileStream.emit (node:events:527:28)\n' +
+    '    at SBMH.ssCb [as _cb] (D:\\Binar\\platypus-app\\node_modules\\busboy\\lib\\types\\multipart.js:479:32)\n' +
+    '    at feed (D:\\Binar\\platypus-app\\node_modules\\streamsearch\\lib\\sbmh.js:248:10)\n' +
+    '    at SBMH.push (D:\\Binar\\platypus-app\\node_modules\\streamsearch\\lib\\sbmh.js:104:16)\n' +
+    '    at Multipart._write (D:\\Binar\\platypus-app\\node_modules\\busboy\\lib\\types\\multipart.js:567:19)\n' +
+    '    at writeOrBuffer (node:internal/streams/writable:389:12)\n' +
+    '    at _write (node:internal/streams/writable:330:10)\n' +
+    '    at Multipart.Writable.write (node:internal/streams/writable:334:10)'
+}
+{
+  name: 'MulterError',
+  message: 'File too large',
+  code: 'LIMIT_FILE_SIZE',
+  field: 'avatar',
+  storageErrors: [],
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-08-29T13:59:38.597Z',
+  stack: 'MulterError: File too large\n' +
+    '    at abortWithCode (D:\\Binar\\platypus-app\\node_modules\\multer\\lib\\make-middleware.js:71:22)\n' +
+    '    at FileStream.<anonymous> (D:\\Binar\\platypus-app\\node_modules\\multer\\lib\\make-middleware.js:134:11)\n' +
+    '    at FileStream.emit (node:events:527:28)\n' +
+    '    at SBMH.ssCb [as _cb] (D:\\Binar\\platypus-app\\node_modules\\busboy\\lib\\types\\multipart.js:479:32)\n' +
+    '    at feed (D:\\Binar\\platypus-app\\node_modules\\streamsearch\\lib\\sbmh.js:248:10)\n' +
+    '    at SBMH.push (D:\\Binar\\platypus-app\\node_modules\\streamsearch\\lib\\sbmh.js:104:16)\n' +
+    '    at Multipart._write (D:\\Binar\\platypus-app\\node_modules\\busboy\\lib\\types\\multipart.js:567:19)\n' +
+    '    at writeOrBuffer (node:internal/streams/writable:389:12)\n' +
+    '    at _write (node:internal/streams/writable:330:10)\n' +
+    '    at Multipart.Writable.write (node:internal/streams/writable:334:10)'
+}
+{
+  name: 'MulterError',
+  message: 'File too large',
+  code: 'LIMIT_FILE_SIZE',
+  field: 'avatar',
+  storageErrors: [],
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-08-29T14:00:50.446Z',
+  stack: 'MulterError: File too large\n' +
+    '    at abortWithCode (D:\\Binar\\platypus-app\\node_modules\\multer\\lib\\make-middleware.js:71:22)\n' +
+    '    at FileStream.<anonymous> (D:\\Binar\\platypus-app\\node_modules\\multer\\lib\\make-middleware.js:134:11)\n' +
+    '    at FileStream.emit (node:events:527:28)\n' +
+    '    at SBMH.ssCb [as _cb] (D:\\Binar\\platypus-app\\node_modules\\busboy\\lib\\types\\multipart.js:479:32)\n' +
+    '    at feed (D:\\Binar\\platypus-app\\node_modules\\streamsearch\\lib\\sbmh.js:248:10)\n' +
+    '    at SBMH.push (D:\\Binar\\platypus-app\\node_modules\\streamsearch\\lib\\sbmh.js:104:16)\n' +
+    '    at Multipart._write (D:\\Binar\\platypus-app\\node_modules\\busboy\\lib\\types\\multipart.js:567:19)\n' +
+    '    at writeOrBuffer (node:internal/streams/writable:389:12)\n' +
+    '    at _write (node:internal/streams/writable:330:10)\n' +
+    '    at Multipart.Writable.write (node:internal/streams/writable:334:10)'
+}
+{
+  code: 404,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-08-29T14:30:26.902Z',
+  message: 'Role not found',
+  stack: 'Error: Role not found\n' +
+    '    at register (D:\\Binar\\platypus-app\\controllers\\users.js:30:19)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
+}
+{
+  name: 'SequelizeDatabaseError',
+  parent: error: column "card_id" of relation "points" does not exist
+      at Parser.parseErrorMessage (D:\Binar\platypus-app\node_modules\pg-protocol\dist\parser.js:287:98)
+      at Parser.handlePacket (D:\Binar\platypus-app\node_modules\pg-protocol\dist\parser.js:126:29)
+      at Parser.parse (D:\Binar\platypus-app\node_modules\pg-protocol\dist\parser.js:39:38)
+      at Socket.<anonymous> (D:\Binar\platypus-app\node_modules\pg-protocol\dist\index.js:11:42)
+      at Socket.emit (node:events:527:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      at readableAddChunk (node:internal/streams/readable:289:9)
+      at Socket.Readable.push (node:internal/streams/readable:228:10)
+      at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+    length: 126,
+    severity: 'ERROR',
+    code: '42703',
+    detail: undefined,
+    hint: undefined,
+    position: '28',
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: undefined,
+    table: undefined,
+    column: undefined,
+    dataType: undefined,
+    constraint: undefined,
+    file: 'parse_target.c',
+    line: '1061',
+    routine: 'checkInsertTargets',
+    sql: 'INSERT INTO "points" ("id","card_id","point","expired_at","created_at","updated_at") VALUES (DEFAULT,$1,$2,$3,$4,$5) RETURNING "id","card_id","point","expired_at","created_at","updated_at","deleted_at";',
+    parameters: [
+      1,
+      1000000,
+      '2023-08-29 14:31:01.905 +00:00',
+      '2022-08-29 14:31:01.912 +00:00',
+      '2022-08-29 14:31:01.912 +00:00'
+    ]
+  },
+  original: error: column "card_id" of relation "points" does not exist
+      at Parser.parseErrorMessage (D:\Binar\platypus-app\node_modules\pg-protocol\dist\parser.js:287:98)
+      at Parser.handlePacket (D:\Binar\platypus-app\node_modules\pg-protocol\dist\parser.js:126:29)
+      at Parser.parse (D:\Binar\platypus-app\node_modules\pg-protocol\dist\parser.js:39:38)
+      at Socket.<anonymous> (D:\Binar\platypus-app\node_modules\pg-protocol\dist\index.js:11:42)
+      at Socket.emit (node:events:527:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      at readableAddChunk (node:internal/streams/readable:289:9)
+      at Socket.Readable.push (node:internal/streams/readable:228:10)
+      at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+    length: 126,
+    severity: 'ERROR',
+    code: '42703',
+    detail: undefined,
+    hint: undefined,
+    position: '28',
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: undefined,
+    table: undefined,
+    column: undefined,
+    dataType: undefined,
+    constraint: undefined,
+    file: 'parse_target.c',
+    line: '1061',
+    routine: 'checkInsertTargets',
+    sql: 'INSERT INTO "points" ("id","card_id","point","expired_at","created_at","updated_at") VALUES (DEFAULT,$1,$2,$3,$4,$5) RETURNING "id","card_id","point","expired_at","created_at","updated_at","deleted_at";',
+    parameters: [
+      1,
+      1000000,
+      '2023-08-29 14:31:01.905 +00:00',
+      '2022-08-29 14:31:01.912 +00:00',
+      '2022-08-29 14:31:01.912 +00:00'
+    ]
+  },
+  sql: 'INSERT INTO "points" ("id","card_id","point","expired_at","created_at","updated_at") VALUES (DEFAULT,$1,$2,$3,$4,$5) RETURNING "id","card_id","point","expired_at","created_at","updated_at","deleted_at";',
+  parameters: [
+    1,
+    1000000,
+    '2023-08-29 14:31:01.905 +00:00',
+    '2022-08-29 14:31:01.912 +00:00',
+    '2022-08-29 14:31:01.912 +00:00'
+  ],
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-08-29T14:31:01.980Z',
+  message: 'column "card_id" of relation "points" does not exist',
+  stack: 'Error\n' +
+    '    at Query.run (D:\\Binar\\platypus-app\\node_modules\\sequelize\\lib\\dialects\\postgres\\query.js:50:25)\n' +
+    '    at D:\\Binar\\platypus-app\\node_modules\\sequelize\\lib\\sequelize.js:311:28\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n' +
+    '    at async PostgresQueryInterface.insert (D:\\Binar\\platypus-app\\node_modules\\sequelize\\lib\\dialects\\abstract\\query-interface.js:308:21)\n' +
+    '    at async Points.save (D:\\Binar\\platypus-app\\node_modules\\sequelize\\lib\\model.js:2432:35)\n' +
+    '    at async Function.create (D:\\Binar\\platypus-app\\node_modules\\sequelize\\lib\\model.js:1344:12)\n' +
+    '    at async D:\\Binar\\platypus-app\\controllers\\users.js:66:13\n' +
+    '    at async D:\\Binar\\platypus-app\\node_modules\\sequelize\\lib\\sequelize.js:503:18\n' +
+    '    at async register (D:\\Binar\\platypus-app\\controllers\\users.js:43:9)'
+}
+{
+  name: 'SequelizeDatabaseError',
+  parent: error: null value in column "id" of relation "points" violates not-null constraint
+      at Parser.parseErrorMessage (D:\Binar\platypus-app\node_modules\pg-protocol\dist\parser.js:287:98)
+      at Parser.handlePacket (D:\Binar\platypus-app\node_modules\pg-protocol\dist\parser.js:126:29)
+      at Parser.parse (D:\Binar\platypus-app\node_modules\pg-protocol\dist\parser.js:39:38)
+      at Socket.<anonymous> (D:\Binar\platypus-app\node_modules\pg-protocol\dist\index.js:11:42)
+      at Socket.emit (node:events:527:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      at readableAddChunk (node:internal/streams/readable:289:9)
+      at Socket.Readable.push (node:internal/streams/readable:228:10)
+      at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+    length: 290,
+    severity: 'ERROR',
+    code: '23502',
+    detail: 'Failing row contains (null, 1000000, 2023-08-29 14:34:33.952+00, 2022-08-29 14:34:33.956+00, 2022-08-29 14:34:33.956+00, null, 2).',
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: 'public',
+    table: 'points',
+    column: 'id',
+    dataType: undefined,
+    constraint: undefined,
+    file: 'execMain.c',
+    line: '1883',
+    routine: 'ExecConstraints',
+    sql: 'INSERT INTO "points" ("id","card_id","point","expired_at","created_at","updated_at") VALUES (DEFAULT,$1,$2,$3,$4,$5) RETURNING "id","card_id","point","expired_at","created_at","updated_at","deleted_at";',
+    parameters: [
+      2,
+      1000000,
+      '2023-08-29 14:34:33.952 +00:00',
+      '2022-08-29 14:34:33.956 +00:00',
+      '2022-08-29 14:34:33.956 +00:00'
+    ]
+  },
+  original: error: null value in column "id" of relation "points" violates not-null constraint
+      at Parser.parseErrorMessage (D:\Binar\platypus-app\node_modules\pg-protocol\dist\parser.js:287:98)
+      at Parser.handlePacket (D:\Binar\platypus-app\node_modules\pg-protocol\dist\parser.js:126:29)
+      at Parser.parse (D:\Binar\platypus-app\node_modules\pg-protocol\dist\parser.js:39:38)
+      at Socket.<anonymous> (D:\Binar\platypus-app\node_modules\pg-protocol\dist\index.js:11:42)
+      at Socket.emit (node:events:527:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      at readableAddChunk (node:internal/streams/readable:289:9)
+      at Socket.Readable.push (node:internal/streams/readable:228:10)
+      at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+    length: 290,
+    severity: 'ERROR',
+    code: '23502',
+    detail: 'Failing row contains (null, 1000000, 2023-08-29 14:34:33.952+00, 2022-08-29 14:34:33.956+00, 2022-08-29 14:34:33.956+00, null, 2).',
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: 'public',
+    table: 'points',
+    column: 'id',
+    dataType: undefined,
+    constraint: undefined,
+    file: 'execMain.c',
+    line: '1883',
+    routine: 'ExecConstraints',
+    sql: 'INSERT INTO "points" ("id","card_id","point","expired_at","created_at","updated_at") VALUES (DEFAULT,$1,$2,$3,$4,$5) RETURNING "id","card_id","point","expired_at","created_at","updated_at","deleted_at";',
+    parameters: [
+      2,
+      1000000,
+      '2023-08-29 14:34:33.952 +00:00',
+      '2022-08-29 14:34:33.956 +00:00',
+      '2022-08-29 14:34:33.956 +00:00'
+    ]
+  },
+  sql: 'INSERT INTO "points" ("id","card_id","point","expired_at","created_at","updated_at") VALUES (DEFAULT,$1,$2,$3,$4,$5) RETURNING "id","card_id","point","expired_at","created_at","updated_at","deleted_at";',
+  parameters: [
+    2,
+    1000000,
+    '2023-08-29 14:34:33.952 +00:00',
+    '2022-08-29 14:34:33.956 +00:00',
+    '2022-08-29 14:34:33.956 +00:00'
+  ],
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-08-29T14:34:34.017Z',
+  message: 'null value in column "id" of relation "points" violates not-null constraint',
+  stack: 'Error\n' +
+    '    at Query.run (D:\\Binar\\platypus-app\\node_modules\\sequelize\\lib\\dialects\\postgres\\query.js:50:25)\n' +
+    '    at D:\\Binar\\platypus-app\\node_modules\\sequelize\\lib\\sequelize.js:311:28\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n' +
+    '    at async PostgresQueryInterface.insert (D:\\Binar\\platypus-app\\node_modules\\sequelize\\lib\\dialects\\abstract\\query-interface.js:308:21)\n' +
+    '    at async Points.save (D:\\Binar\\platypus-app\\node_modules\\sequelize\\lib\\model.js:2432:35)\n' +
+    '    at async Function.create (D:\\Binar\\platypus-app\\node_modules\\sequelize\\lib\\model.js:1344:12)\n' +
+    '    at async D:\\Binar\\platypus-app\\controllers\\users.js:66:13\n' +
+    '    at async D:\\Binar\\platypus-app\\node_modules\\sequelize\\lib\\sequelize.js:503:18\n' +
+    '    at async register (D:\\Binar\\platypus-app\\controllers\\users.js:43:9)'
+}
+{
+  name: 'SequelizeDatabaseError',
+  parent: error: null value in column "id" of relation "points" violates not-null constraint
+      at Parser.parseErrorMessage (D:\Binar\platypus-app\node_modules\pg-protocol\dist\parser.js:287:98)
+      at Parser.handlePacket (D:\Binar\platypus-app\node_modules\pg-protocol\dist\parser.js:126:29)
+      at Parser.parse (D:\Binar\platypus-app\node_modules\pg-protocol\dist\parser.js:39:38)
+      at Socket.<anonymous> (D:\Binar\platypus-app\node_modules\pg-protocol\dist\index.js:11:42)
+      at Socket.emit (node:events:527:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      at readableAddChunk (node:internal/streams/readable:289:9)
+      at Socket.Readable.push (node:internal/streams/readable:228:10)
+      at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+    length: 290,
+    severity: 'ERROR',
+    code: '23502',
+    detail: 'Failing row contains (null, 1000000, 2023-08-29 14:35:16.452+00, 2022-08-29 14:35:16.456+00, 2022-08-29 14:35:16.456+00, null, 3).',
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: 'public',
+    table: 'points',
+    column: 'id',
+    dataType: undefined,
+    constraint: undefined,
+    file: 'execMain.c',
+    line: '1883',
+    routine: 'ExecConstraints',
+    sql: 'INSERT INTO "points" ("id","card_id","point","expired_at","created_at","updated_at") VALUES (DEFAULT,$1,$2,$3,$4,$5) RETURNING "id","card_id","point","expired_at","created_at","updated_at","deleted_at";',
+    parameters: [
+      3,
+      1000000,
+      '2023-08-29 14:35:16.452 +00:00',
+      '2022-08-29 14:35:16.456 +00:00',
+      '2022-08-29 14:35:16.456 +00:00'
+    ]
+  },
+  original: error: null value in column "id" of relation "points" violates not-null constraint
+      at Parser.parseErrorMessage (D:\Binar\platypus-app\node_modules\pg-protocol\dist\parser.js:287:98)
+      at Parser.handlePacket (D:\Binar\platypus-app\node_modules\pg-protocol\dist\parser.js:126:29)
+      at Parser.parse (D:\Binar\platypus-app\node_modules\pg-protocol\dist\parser.js:39:38)
+      at Socket.<anonymous> (D:\Binar\platypus-app\node_modules\pg-protocol\dist\index.js:11:42)
+      at Socket.emit (node:events:527:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      at readableAddChunk (node:internal/streams/readable:289:9)
+      at Socket.Readable.push (node:internal/streams/readable:228:10)
+      at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+    length: 290,
+    severity: 'ERROR',
+    code: '23502',
+    detail: 'Failing row contains (null, 1000000, 2023-08-29 14:35:16.452+00, 2022-08-29 14:35:16.456+00, 2022-08-29 14:35:16.456+00, null, 3).',
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: 'public',
+    table: 'points',
+    column: 'id',
+    dataType: undefined,
+    constraint: undefined,
+    file: 'execMain.c',
+    line: '1883',
+    routine: 'ExecConstraints',
+    sql: 'INSERT INTO "points" ("id","card_id","point","expired_at","created_at","updated_at") VALUES (DEFAULT,$1,$2,$3,$4,$5) RETURNING "id","card_id","point","expired_at","created_at","updated_at","deleted_at";',
+    parameters: [
+      3,
+      1000000,
+      '2023-08-29 14:35:16.452 +00:00',
+      '2022-08-29 14:35:16.456 +00:00',
+      '2022-08-29 14:35:16.456 +00:00'
+    ]
+  },
+  sql: 'INSERT INTO "points" ("id","card_id","point","expired_at","created_at","updated_at") VALUES (DEFAULT,$1,$2,$3,$4,$5) RETURNING "id","card_id","point","expired_at","created_at","updated_at","deleted_at";',
+  parameters: [
+    3,
+    1000000,
+    '2023-08-29 14:35:16.452 +00:00',
+    '2022-08-29 14:35:16.456 +00:00',
+    '2022-08-29 14:35:16.456 +00:00'
+  ],
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-08-29T14:35:16.493Z',
+  message: 'null value in column "id" of relation "points" violates not-null constraint',
+  stack: 'Error\n' +
+    '    at Query.run (D:\\Binar\\platypus-app\\node_modules\\sequelize\\lib\\dialects\\postgres\\query.js:50:25)\n' +
+    '    at D:\\Binar\\platypus-app\\node_modules\\sequelize\\lib\\sequelize.js:311:28\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n' +
+    '    at async PostgresQueryInterface.insert (D:\\Binar\\platypus-app\\node_modules\\sequelize\\lib\\dialects\\abstract\\query-interface.js:308:21)\n' +
+    '    at async Points.save (D:\\Binar\\platypus-app\\node_modules\\sequelize\\lib\\model.js:2432:35)\n' +
+    '    at async Function.create (D:\\Binar\\platypus-app\\node_modules\\sequelize\\lib\\model.js:1344:12)\n' +
+    '    at async D:\\Binar\\platypus-app\\controllers\\users.js:67:13\n' +
+    '    at async D:\\Binar\\platypus-app\\node_modules\\sequelize\\lib\\sequelize.js:503:18\n' +
+    '    at async register (D:\\Binar\\platypus-app\\controllers\\users.js:43:9)'
+}
+{
+  code: 404,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-08-29T14:38:28.239Z',
+  message: 'Role not found',
+  stack: 'Error: Role not found\n' +
+    '    at register (D:\\Binar\\platypus-app\\controllers\\users.js:30:19)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
+}
+{
+  name: 'SequelizeDatabaseError',
+  parent: error: null value in column "id" of relation "points" violates not-null constraint
+      at Parser.parseErrorMessage (D:\Binar\platypus-app\node_modules\pg-protocol\dist\parser.js:287:98)
+      at Parser.handlePacket (D:\Binar\platypus-app\node_modules\pg-protocol\dist\parser.js:126:29)
+      at Parser.parse (D:\Binar\platypus-app\node_modules\pg-protocol\dist\parser.js:39:38)
+      at Socket.<anonymous> (D:\Binar\platypus-app\node_modules\pg-protocol\dist\index.js:11:42)
+      at Socket.emit (node:events:527:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      at readableAddChunk (node:internal/streams/readable:289:9)
+      at Socket.Readable.push (node:internal/streams/readable:228:10)
+      at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+    length: 288,
+    severity: 'ERROR',
+    code: '23502',
+    detail: 'Failing row contains (null, 1000000, 2023-08-29 14:38:54.717+00, 2022-08-29 14:38:54.72+00, 2022-08-29 14:38:54.72+00, null, 1).',
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: 'public',
+    table: 'points',
+    column: 'id',
+    dataType: undefined,
+    constraint: undefined,
+    file: 'execMain.c',
+    line: '1883',
+    routine: 'ExecConstraints',
+    sql: 'INSERT INTO "points" ("id","card_id","point","expired_at","created_at","updated_at") VALUES (DEFAULT,$1,$2,$3,$4,$5) RETURNING "id","card_id","point","expired_at","created_at","updated_at","deleted_at";',
+    parameters: [
+      1,
+      1000000,
+      '2023-08-29 14:38:54.717 +00:00',
+      '2022-08-29 14:38:54.720 +00:00',
+      '2022-08-29 14:38:54.720 +00:00'
+    ]
+  },
+  original: error: null value in column "id" of relation "points" violates not-null constraint
+      at Parser.parseErrorMessage (D:\Binar\platypus-app\node_modules\pg-protocol\dist\parser.js:287:98)
+      at Parser.handlePacket (D:\Binar\platypus-app\node_modules\pg-protocol\dist\parser.js:126:29)
+      at Parser.parse (D:\Binar\platypus-app\node_modules\pg-protocol\dist\parser.js:39:38)
+      at Socket.<anonymous> (D:\Binar\platypus-app\node_modules\pg-protocol\dist\index.js:11:42)
+      at Socket.emit (node:events:527:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      at readableAddChunk (node:internal/streams/readable:289:9)
+      at Socket.Readable.push (node:internal/streams/readable:228:10)
+      at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+    length: 288,
+    severity: 'ERROR',
+    code: '23502',
+    detail: 'Failing row contains (null, 1000000, 2023-08-29 14:38:54.717+00, 2022-08-29 14:38:54.72+00, 2022-08-29 14:38:54.72+00, null, 1).',
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: 'public',
+    table: 'points',
+    column: 'id',
+    dataType: undefined,
+    constraint: undefined,
+    file: 'execMain.c',
+    line: '1883',
+    routine: 'ExecConstraints',
+    sql: 'INSERT INTO "points" ("id","card_id","point","expired_at","created_at","updated_at") VALUES (DEFAULT,$1,$2,$3,$4,$5) RETURNING "id","card_id","point","expired_at","created_at","updated_at","deleted_at";',
+    parameters: [
+      1,
+      1000000,
+      '2023-08-29 14:38:54.717 +00:00',
+      '2022-08-29 14:38:54.720 +00:00',
+      '2022-08-29 14:38:54.720 +00:00'
+    ]
+  },
+  sql: 'INSERT INTO "points" ("id","card_id","point","expired_at","created_at","updated_at") VALUES (DEFAULT,$1,$2,$3,$4,$5) RETURNING "id","card_id","point","expired_at","created_at","updated_at","deleted_at";',
+  parameters: [
+    1,
+    1000000,
+    '2023-08-29 14:38:54.717 +00:00',
+    '2022-08-29 14:38:54.720 +00:00',
+    '2022-08-29 14:38:54.720 +00:00'
+  ],
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-08-29T14:38:54.785Z',
+  message: 'null value in column "id" of relation "points" violates not-null constraint',
+  stack: 'Error\n' +
+    '    at Query.run (D:\\Binar\\platypus-app\\node_modules\\sequelize\\lib\\dialects\\postgres\\query.js:50:25)\n' +
+    '    at D:\\Binar\\platypus-app\\node_modules\\sequelize\\lib\\sequelize.js:311:28\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n' +
+    '    at async PostgresQueryInterface.insert (D:\\Binar\\platypus-app\\node_modules\\sequelize\\lib\\dialects\\abstract\\query-interface.js:308:21)\n' +
+    '    at async Points.save (D:\\Binar\\platypus-app\\node_modules\\sequelize\\lib\\model.js:2432:35)\n' +
+    '    at async Function.create (D:\\Binar\\platypus-app\\node_modules\\sequelize\\lib\\model.js:1344:12)\n' +
+    '    at async D:\\Binar\\platypus-app\\controllers\\users.js:67:13\n' +
+    '    at async D:\\Binar\\platypus-app\\node_modules\\sequelize\\lib\\sequelize.js:503:18\n' +
+    '    at async register (D:\\Binar\\platypus-app\\controllers\\users.js:43:9)'
+}

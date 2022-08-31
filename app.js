@@ -6,10 +6,12 @@ const bookRouter = require('./routes/books.router')
 const trxRouter = require('./routes/transactions.router')
 const oauthRouter = require('./routes/auth.router')
 const filesRouter = require('./routes/files.router')
+const cartsRouter = require('./routes/carts.router')
 
 const passport = require('./middlewares/passport-middleware')
 const passportOauth = require('./middlewares/passport-oauth.middleware');
 const logger = require('./helpers/winston.helper');
+const { default: mongoose } = require('mongoose');
 
 
 const app = express()
@@ -31,7 +33,10 @@ app.use('/auth', userRouter)
 app.use('/books', bookRouter)
 app.use('/transactions', trxRouter)
 app.use('/files', filesRouter)
+app.use('/cart', cartsRouter)
 app.use(oauthRouter)
+
+mongoose.connect(process.env.MONGO_URI).then(() => console.log('success connect mongo')).catch(err => console.log(err))
 
 app.use((err, req, res, next) => {
     logger.error(err)
