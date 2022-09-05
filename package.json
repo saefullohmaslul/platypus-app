@@ -4,6 +4,7 @@
   "description": "Perpustakaan Online",
   "main": "index.js",
   "scripts": {
+    "test": "jest --detectOpenHandles",
     "start:dev": "nodemon index.js",
     "start": "node index.js",
     "db:create": "sequelize-cli db:create",
@@ -37,7 +38,15 @@
     "winston-logs-display": "^1.0.0"
   },
   "devDependencies": {
+    "@faker-js/faker": "^7.5.0",
+    "@types/jest": "^29.0.0",
+    "jest": "^29.0.2",
     "nodemon": "^2.0.19",
-    "sequelize-cli": "^6.4.1"
+    "sequelize-cli": "^6.4.1",
+    "supertest": "^6.2.4"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "testTimeout": 30000
   }
 }

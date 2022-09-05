@@ -996,3 +996,113 @@
     '    at exports.getCart (D:\\Binar\\platypus-app\\controllers\\carts.controller.js:23:19)\n' +
     '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
 }
+{
+  code: 404,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-09-05T14:50:28.183Z',
+  message: 'Role not found',
+  stack: 'Error: Role not found\n' +
+    '    at register (D:\\Binar\\platypus-app\\controllers\\users.js:30:19)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
+}
+{
+  code: 404,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-09-05T14:52:02.103Z',
+  message: 'Role not found',
+  stack: 'Error: Role not found\n' +
+    '    at register (D:\\Binar\\platypus-app\\controllers\\users.js:30:19)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
+}
+{
+  code: 404,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-09-05T14:55:31.866Z',
+  message: 'Role not found',
+  stack: 'Error: Role not found\n' +
+    '    at register (D:\\Binar\\platypus-app\\controllers\\users.js:30:19)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
+}
+{
+  code: 404,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-09-05T14:57:36.971Z',
+  message: 'Role not found',
+  stack: 'Error: Role not found\n' +
+    '    at register (D:\\Binar\\platypus-app\\controllers\\users.js:30:19)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
+}
+{
+  code: 404,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-09-05T14:59:02.696Z',
+  message: 'Role not found',
+  stack: 'Error: Role not found\n' +
+    '    at register (D:\\Binar\\platypus-app\\controllers\\users.js:30:19)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
+}
+{
+  code: 404,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-09-05T15:00:53.710Z',
+  message: 'Role not found',
+  stack: 'Error: Role not found\n' +
+    '    at register (D:\\Binar\\platypus-app\\controllers\\users.js:30:19)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
+}
+{
+  code: 404,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-09-05T15:02:34.316Z',
+  message: 'Role not found',
+  stack: 'Error: Role not found\n' +
+    '    at register (D:\\Binar\\platypus-app\\controllers\\users.js:30:19)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
+}
+{
+  code: 404,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-09-05T15:04:11.344Z',
+  message: 'Role not found',
+  stack: 'Error: Role not found\n' +
+    '    at register (D:\\Binar\\platypus-app\\controllers\\users.js:30:19)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
+}
+{
+  code: 404,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-09-05T15:10:10.373Z',
+  message: 'Role not found',
+  stack: 'Error: Role not found\n' +
+    '    at register (D:\\Binar\\platypus-app\\controllers\\users.js:30:19)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
+}
+{
+  code: 404,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-09-05T15:11:23.620Z',
+  message: 'Role not found',
+  stack: 'Error: Role not found\n' +
+    '    at register (D:\\Binar\\platypus-app\\controllers\\users.js:30:19)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
+}
+{
+  code: 404,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-09-05T15:12:33.267Z',
+  message: 'Role not found',
+  stack: 'Error: Role not found\n' +
+    '    at register (D:\\Binar\\platypus-app\\controllers\\users.js:30:19)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
+}
