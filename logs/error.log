@@ -774,3 +774,167 @@
     '    at register (D:\\Binar\\platypus-app\\controllers\\users.js:30:19)\n' +
     '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
 }
+{
+  code: 404,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-09-06T12:27:32.524Z',
+  message: 'Role not found',
+  stack: 'Error: Role not found\n' +
+    '    at register (D:\\Binar\\platypus-app\\controllers\\users.js:30:19)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
+}
+{
+  code: 404,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-09-06T12:32:33.691Z',
+  message: 'Role not found',
+  stack: 'Error: Role not found\n' +
+    '    at register (D:\\Binar\\platypus-app\\controllers\\users.js:30:19)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
+}
+{
+  code: 400,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-09-06T12:32:33.794Z',
+  message: 'Email already exist',
+  stack: 'Error: Email already exist\n' +
+    '    at register (D:\\Binar\\platypus-app\\controllers\\users.js:36:19)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
+}
+{
+  code: 404,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-09-06T12:33:22.762Z',
+  message: 'Role not found',
+  stack: 'Error: Role not found\n' +
+    '    at register (D:\\Binar\\platypus-app\\controllers\\users.js:30:19)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
+}
+{
+  code: 400,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-09-06T12:33:22.807Z',
+  message: 'Email already exist',
+  stack: 'Error: Email already exist\n' +
+    '    at register (D:\\Binar\\platypus-app\\controllers\\users.js:36:19)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
+}
+{
+  code: 404,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-09-06T12:37:19.535Z',
+  message: 'Role not found',
+  stack: 'Error: Role not found\n' +
+    '    at register (D:\\Binar\\platypus-app\\controllers\\users.js:30:19)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
+}
+{
+  code: 400,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-09-06T12:37:19.569Z',
+  message: 'Email already exist',
+  stack: 'Error: Email already exist\n' +
+    '    at register (D:\\Binar\\platypus-app\\controllers\\users.js:36:19)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
+}
+{
+  code: 404,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-09-06T12:44:23.363Z',
+  message: 'Role not found',
+  stack: 'Error: Role not found\n' +
+    '    at register (D:\\Binar\\platypus-app\\controllers\\users.js:30:19)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
+}
+{
+  code: 400,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-09-06T12:44:23.401Z',
+  message: 'Email already exist',
+  stack: 'Error: Email already exist\n' +
+    '    at register (D:\\Binar\\platypus-app\\controllers\\users.js:36:19)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
+}
+{
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-09-06T12:49:29.770Z',
+  message: 'ConnectionManager.getConnection was called after the connection manager was closed!',
+  stack: 'Error: ConnectionManager.getConnection was called after the connection manager was closed!\n' +
+    '    at ConnectionManager.getConnection (D:\\Binar\\platypus-app\\node_modules\\sequelize\\src\\dialects\\abstract\\connection-manager.js:113:13)\n' +
+    '    at D:\\Binar\\platypus-app\\node_modules\\sequelize\\src\\sequelize.js:629:111\n' +
+    '    at D:\\Binar\\platypus-app\\node_modules\\retry-as-promised\\index.js:69:21\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at retryAsPromised (D:\\Binar\\platypus-app\\node_modules\\retry-as-promised\\index.js:59:10)\n' +
+    '    at Sequelize.query (D:\\Binar\\platypus-app\\node_modules\\sequelize\\src\\sequelize.js:622:12)\n' +
+    '    at PostgresQueryInterface.select (D:\\Binar\\platypus-app\\node_modules\\sequelize\\src\\dialects\\abstract\\query-interface.js:1001:33)\n' +
+    '    at Function.findAll (D:\\Binar\\platypus-app\\node_modules\\sequelize\\src\\model.js:1816:47)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n' +
+    '    at Function.findOne (D:\\Binar\\platypus-app\\node_modules\\sequelize\\src\\model.js:1982:12)'
+}
+{
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-09-06T12:49:29.912Z',
+  message: 'ConnectionManager.getConnection was called after the connection manager was closed!',
+  stack: 'Error: ConnectionManager.getConnection was called after the connection manager was closed!\n' +
+    '    at ConnectionManager.getConnection (D:\\Binar\\platypus-app\\node_modules\\sequelize\\src\\dialects\\abstract\\connection-manager.js:113:13)\n' +
+    '    at D:\\Binar\\platypus-app\\node_modules\\sequelize\\src\\sequelize.js:629:111\n' +
+    '    at D:\\Binar\\platypus-app\\node_modules\\retry-as-promised\\index.js:69:21\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at retryAsPromised (D:\\Binar\\platypus-app\\node_modules\\retry-as-promised\\index.js:59:10)\n' +
+    '    at Sequelize.query (D:\\Binar\\platypus-app\\node_modules\\sequelize\\src\\sequelize.js:622:12)\n' +
+    '    at PostgresQueryInterface.select (D:\\Binar\\platypus-app\\node_modules\\sequelize\\src\\dialects\\abstract\\query-interface.js:1001:33)\n' +
+    '    at Function.findAll (D:\\Binar\\platypus-app\\node_modules\\sequelize\\src\\model.js:1816:47)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n' +
+    '    at Function.findOne (D:\\Binar\\platypus-app\\node_modules\\sequelize\\src\\model.js:1982:12)'
+}
+{
+  code: 404,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-09-06T12:50:34.573Z',
+  message: 'Role not found',
+  stack: 'Error: Role not found\n' +
+    '    at register (D:\\Binar\\platypus-app\\controllers\\users.js:30:19)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
+}
+{
+  code: 400,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-09-06T12:50:34.603Z',
+  message: 'Email already exist',
+  stack: 'Error: Email already exist\n' +
+    '    at register (D:\\Binar\\platypus-app\\controllers\\users.js:36:19)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
+}
+{
+  code: 404,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-09-06T12:51:32.937Z',
+  message: 'Role not found',
+  stack: 'Error: Role not found\n' +
+    '    at register (D:\\Binar\\platypus-app\\controllers\\users.js:30:19)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
+}
+{
+  code: 400,
+  level: 'error',
+  service: 'platypus',
+  timestamp: '2022-09-06T12:51:32.985Z',
+  message: 'Email already exist',
+  stack: 'Error: Email already exist\n' +
+    '    at register (D:\\Binar\\platypus-app\\controllers\\users.js:36:19)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
+}

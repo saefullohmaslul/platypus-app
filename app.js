@@ -36,7 +36,7 @@ app.use('/files', filesRouter)
 app.use('/cart', cartsRouter)
 app.use(oauthRouter)
 
-mongoose.connect(process.env.MONGO_URI).then(() => console.log('success connect mongo')).catch(err => console.log(err))
+// mongoose.connect(process.env.MONGO_URI).then(() => console.log('success connect mongo')).catch(err => console.log(err))
 
 app.use((err, req, res, next) => {
     logger.error(err)
