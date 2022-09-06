@@ -1,7 +1,7 @@
 module.exports = {
     apps: [
       {
-        name: 'appa',
+        name: 'platypus',
         script: 'index.js',
         instances: 1,
         autorestart: true,
