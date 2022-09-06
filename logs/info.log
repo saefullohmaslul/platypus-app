@@ -1270,3 +1270,9 @@
     '    at register (D:\\Binar\\platypus-app\\controllers\\users.js:36:19)\n' +
     '    at processTicksAndRejections (node:internal/process/task_queues:96:5)'
 }
+{
+  message: 'server running on port: 8080',
+  level: 'info',
+  service: 'platypus',
+  timestamp: '2022-09-06T13:35:11.729Z'
+}
