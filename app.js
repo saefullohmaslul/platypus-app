@@ -35,6 +35,11 @@ app.use('/transactions', trxRouter)
 app.use('/files', filesRouter)
 app.use('/cart', cartsRouter)
 app.use(oauthRouter)
+app.get('/health', (req, res) => {
+    return res.status(200).json({
+        message: 'OK'
+    })
+})
 
 // mongoose.connect(process.env.MONGO_URI).then(() => console.log('success connect mongo')).catch(err => console.log(err))
 
