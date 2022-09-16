@@ -1,7 +1,7 @@
 require('dotenv').config()
 
 const { Users, Roles, Cards, Points, sequelize } = require('../db/models')
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
 const { add } = require('date-fns')
 const NewError = require('../helpers/error-stack.helper')
@@ -60,7 +60,6 @@ const register = async (req, res, next) => {
             }, {
                 transaction: trx
             })
-            console.log(card)
 
             // create point
             const now = new Date()

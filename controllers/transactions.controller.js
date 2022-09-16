@@ -73,7 +73,6 @@ const createTransaction = async(req, res, next) => {
             message: 'success pinjam buku'
         })
     } catch (error) {
-        console.log(error)
         next(error)
     }
 }

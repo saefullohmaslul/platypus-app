@@ -6,6 +6,7 @@ services:
     environment:
       POSTGRES_USER: ${DB_USER}
       POSTGRES_PASSWORD: ${DB_PASS}
+      POSTGRES_DB: ${DB_NAME}
       PGDATA: /data/postgres
     volumes:
        - postgres:/data/postgres
@@ -16,6 +17,7 @@ services:
   platypus:
     depends_on:
       - postgres
+      - platypus_migration
     build: .
     env_file: 
       - .env
@@ -27,6 +29,15 @@ services:
         target: /app
     ports:
       - 8080:8080
+
+  platypus_migration:
+    depends_on:
+      - postgres
+    build: .
+    env_file:
+      - .env
+    command: sh -c "npm run db:migrate && npm run db:seed"
+    restart: on-failure
 
 volumes:
   postgres:

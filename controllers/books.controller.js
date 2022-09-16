@@ -1,8 +1,6 @@
 const {sequelize, Books, Categories, Stocks} = require('../db/models')
 
-const createBook = async (req, res, next) => {
-    console.log(req.user)
-    
+const createBook = async (req, res, next) => {    
     try {
         const {category_id, stock, ...createBook} = req.body
         const isCategoryExist = await Categories.findOne({

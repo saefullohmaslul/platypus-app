@@ -13,12 +13,10 @@ passport.serializeUser((user, done) => {
     // TODO: insert ke tabel users kalo belum ada usernya
     // TODO: user id ini buat create jwt token
     // TODO: jwt token expired sesuai logic kita yang lain
-    // console.log('serializeUser', user)
     return done(null, user)
 })
 
 passport.deserializeUser((user, done) => {
-    // console.log('deserializeUser', user)
     return done(null, user)
 })
 
