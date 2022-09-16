@@ -39,5 +39,14 @@ services:
     command: sh -c "npm run db:migrate && npm run db:seed"
     restart: on-failure
 
+  mongo:
+    image: mongo
+    restart: always
+    ports:
+      - 27071:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: platypus
+      MONGO_INITDB_ROOT_PASSWORD: 12345678
+
 volumes:
   postgres:
